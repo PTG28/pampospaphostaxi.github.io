@@ -8,7 +8,7 @@
 	<div id="header">
 		<div class="container">
 			<nav>
-				<img src="images/logo.png" class="logo">
+				<img src="logo.png" class="logo">
 				<ul id="sidemenu">
 					<li><a href="pampospaphostaxi.html">Home</a></li>
 					<li><a href="pampospaphostaxi.html#about">About</a></li>
@@ -31,13 +31,13 @@
 		
 
 		<div class="form-container">
-			<form id="from-airport-form" style="display: block;" action="https://formsubmit.co/petros.pet03@gmail.com" method="POST">
+			<form name="submit-to-email" id="from-airport-form" style="display: block;" action="https://formsubmit.co/c22903eeda1150786df3dc7808200c90" method="POST">
 				<h2 class="form-title">Arrivals</h2>
 
 				<label for="pickup-location">Pickup me from airport:</label>
 				<input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
-				<select id="pickup-location" name="Pickup">
+				<select id="pickup-location" name="Pickup" required>
 					<option value="Select">-Select-</option>
 					<option value="Paphos">Paphos</option>
 					<option value="Larnaca">Larnaca</option>
@@ -50,7 +50,7 @@
 				<input type="text" name="Full&nbsp;name" id="from-airport-name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers" name="Passengers">
+				<select id="passengers" name="Passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -73,7 +73,7 @@
 				<input type="time" name="Time" id="from-airport-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select name="Child&nbsp;seat"  id="from-airport-child-seat">
+				<select name="Child&nbsp;seat"  id="from-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
@@ -104,7 +104,7 @@
 				<input type="text" id="Location" required>
 
 				<label for="Destination">Take me to airport:</label>
-				<select id="Destination">
+				<select id="Destination" required>
 					<option value="Select">-Select-</option>
 					<option value="Paphos">Paphos</option>
 					<option value="Larnaca">Larnaca</option>
@@ -114,7 +114,7 @@
 				<input type="text" id="to-airport-name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers">
+				<select id="passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -135,7 +135,7 @@
 				<input type="time" id="to-airport-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select id="to-airport-child-seat">
+				<select id="to-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
@@ -172,7 +172,7 @@
 				<input type="text" id="other-name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers">
+				<select id="passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -189,7 +189,7 @@
 				<input type="time" id="other-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select id="to-airport-child-seat">
+				<select id="to-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
@@ -243,58 +243,6 @@
 			document.getElementById('to-airport-form').style.display = 'none';
 			document.getElementById('from-airport-form').style.display = 'none';
 			document.getElementById('other-form').style.display = 'block';
-		});
-
-		document.getElementById('to-airport-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-
-			var name = document.getElementById('to-airport-name').value;
-			var email = document.getElementById('to-airport-email').value;
-			var flightNumber = document.getElementById('to-airport-flight-number').value;
-			var date = document.getElementById('to-airport-date').value;
-			var time = document.getElementById('to-airport-time').value;
-			var childSeat = document.getElementById('to-airport-child-seat').value;
-			var message = document.getElementById('to-airport-message').value;
-
-			var successMessage = document.getElementById('to-airport-success-message');
-			successMessage.innerText = 'Booking successful! Thank you, ' + name + '!';
-			successMessage.style.display = 'block';
-
-			document.getElementById('to-airport-form').reset();
-		});
-
-		document.getElementById('from-airport-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-
-			var name = document.getElementById('from-airport-name').value;
-			var email = document.getElementById('from-airport-email').value;
-			var flightNumber = document.getElementById('from-airport-flight-number').value;
-			var date = document.getElementById('from-airport-date').value;
-			var time = document.getElementById('from-airport-time').value;
-			var childSeat = document.getElementById('from-airport-child-seat').value;
-			var message = document.getElementById('from-airport-message').value;
-
-			var successMessage = document.getElementById('from-airport-success-message');
-			successMessage.innerText = 'Booking successful! Thank you, ' + name + '!';
-			successMessage.style.display = 'block';
-
-			document.getElementById('from-airport-form').reset();
-		});
-
-		document.getElementById('other-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-
-			var name = document.getElementById('other-name').value;
-			var email = document.getElementById('other-email').value;
-			var date = document.getElementById('other-date').value;
-			var time = document.getElementById('other-time').value;
-			var message = document.getElementById('other-message').value;
-
-			var successMessage = document.getElementById('other-success-message');
-			successMessage.innerText = 'Booking successful! Thank you, ' + name + '!';
-			successMessage.style.display = 'block';
-
-			document.getElementById('other-form').reset();
 		});
 	</script>
 </body>

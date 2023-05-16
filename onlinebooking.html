@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Booking Form</title>
+	<link rel="stylesheet" href="onlinebookingstyle.css">
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="images/logo.png" class="logo">
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Price List</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#">Online Booking</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
+				</ul>
+				<i class="fas fa-bars" onclick="openmenu()"></i>
+			</nav>
+
+	<div class="container">
+		<h2 class="transfer-type-title">Transfer Type</h2>
+		<div class="bullet-points">
+			<div class="bullet-point" id="from-airport-bullet"></div>Arrivals
+			<div class="bullet-point" id="to-airport-bullet"></div>Departures
+			<div class="bullet-point" id="other-bullet"></div>Other
+		</div>
+		
+
+		<div class="form-container">
+			<form id="from-airport-form" style="display: block;" action="https://formsubmit.co/c22903eeda1150786df3dc7808200c90" method="POST">
+				<h2 class="form-title">Arrivals</h2>
+
+				<label for="pickup-location">Pickup me from airport:</label>
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+				<select id="pickup-location" name="Pickup">
+					<option value="Select">-Select-</option>
+					<option value="Paphos">Paphos</option>
+					<option value="Larnaca">Larnaca</option>
+				</select>
+
+				<label for="Destination">Destination:</label>
+				<input type="text" name="Destination" id="Destination" required>
+
+				<label for="name">Full name:</label>
+				<input type="text" name="Full&nbsp;name" id="from-airport-name" required>
+
+				<label for="passengers">Number of passengers:</label>
+				<select id="passengers" name="Passengers">
+					<option value="Select">-Select-</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+
+				<label for="Luggages">Number of luggages:</label>
+				<input type="text" name="Luggages" id="Luggages" placeholder="1x20kg , 2x8kg">
+
+				<label for="flight-number">Flight Number:</label>
+				<input type="text" name="Flight&nbsp;Number" id="from-airport-flight-number" required>
+
+				<label for="date">Date:</label>
+				<input type="date" name="Date" id="from-airport-date" required>
+
+				<label for="time">Time:</label>
+				<input type="time" name="Time" id="from-airport-time" required>
+
+				<label for="child-seat">Child Seat:</label>
+				<select name="Child&nbsp;seat"  id="from-airport-child-seat">
+					<option value="Select">-Select-</option>
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+				</select>
+
+				<label for="Phone">Phone number:</label>
+				<input name="Phone" type="text" id="Phone" required>
+
+				<label for="email">Email:</label>
+				<input name="Email" type="email" id="from-airport-email" required>
+
+				<label for="message">Message:</label>
+				<textarea name="Message" id="from-airport-message" rows="5"></textarea>
+
+				<button type="submit">Book Now</button>
+			</form>
+			<div id="from-airport-success-message" class="success-message" style="display: none;"></div>
+		</div>
+
+
+		<div class="form-container">
+			<form  id="to-airport-form" style="display: none;" action="https://formsubmit.co/c22903eeda1150786df3dc7808200c90" method="POST">
+				<h2 class="form-title">Departures</h2>
+
+				<label for="Location">Location:</label>
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+				<input type="text" id="Location" required>
+
+				<label for="Destination">Take me to airport:</label>
+				<select id="Destination">
+					<option value="Select">-Select-</option>
+					<option value="Paphos">Paphos</option>
+					<option value="Larnaca">Larnaca</option>
+				</select>
+
+				<label for="name">Full name:</label>
+				<input type="text" id="to-airport-name" required>
+
+				<label for="passengers">Number of passengers:</label>
+				<select id="passengers">
+					<option value="Select">-Select-</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+
+				<label for="Luggages">Number of luggages:</label>
+				<input type="text" id="to-airport-flight-number" placeholder="1x20kg , 2x8kg">
+				
+
+				<label for="date">Date:</label>
+				<input type="date" id="to-airport-date" required>
+
+				<label for="time">Time:</label>
+				<input type="time" id="to-airport-time" required>
+
+				<label for="child-seat">Child Seat:</label>
+				<select id="to-airport-child-seat">
+					<option value="Select">-Select-</option>
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+				</select>
+
+				<label for="Phone">Phone number:</label>
+				<input type="text" id="Phone" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="to-airport-email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="to-airport-message" rows="5"></textarea>
+
+				<button type="submit">Book Now</button>
+			</form>
+			<div id="to-airport-success-message" class="success-message" style="display: none;"></div>
+		</div>
+
+
+		<div class="form-container">
+			<form id="other-form" style="display: none;" action="https://formsubmit.co/c22903eeda1150786df3dc7808200c90" method="POST">
+				<h2 class="form-title">Other</h2>
+
+				<label for="Location">Location:</label>
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+				<input type="text" id="Location" required>
+
+				<label for="Destination">Destination:</label>
+				<input type="text" id="Destination" required>
+
+				<label for="name">Full name:</label>
+				<input type="text" id="other-name" required>
+
+				<label for="passengers">Number of passengers:</label>
+				<select id="passengers">
+					<option value="Select">-Select-</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+
+				<label for="date">Date:</label>
+				<input type="date" id="other-date" required>
+
+				<label for="time">Time:</label>
+				<input type="time" id="other-time" required>
+
+				<label for="child-seat">Child Seat:</label>
+				<select id="to-airport-child-seat">
+					<option value="Select">-Select-</option>
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+				</select>
+
+				<label for="Phone">Phone number:</label>
+				<input type="text" id="Phone" required>
+
+
+				<label for="email">Email:</label>
+				<input type="email" id="other-email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="other-message" rows="5"></textarea>
+
+				<button type="submit">Book Now</button>
+			</form>
+			<div id="other-success-message" class="success-message" style="display: none;"></div>
+		</div>
+
+	</div>
+
+	<script>
+
+		var sidemeu = document.getElementById("sidemenu");
+	
+		function openmenu(){
+			sidemeu.style.right = "0";
+		}
+		function closemenu(){
+			sidemeu.style.right = "-200px";
+		}
+	
+	</script>
+
+
+	<script>
+		document.getElementById('to-airport-bullet').addEventListener('click', function() {
+			document.getElementById('to-airport-form').style.display = 'block';
+			document.getElementById('from-airport-form').style.display = 'none';
+			document.getElementById('other-form').style.display = 'none';
+		});
+
+		document.getElementById('from-airport-bullet').addEventListener('click', function() {
+			document.getElementById('to-airport-form').style.display = 'none';
+			document.getElementById('from-airport-form').style.display = 'block';
+			document.getElementById('other-form').style.display = 'none';
+		});
+
+		document.getElementById('other-bullet').addEventListener('click', function() {
+			document.getElementById('to-airport-form').style.display = 'none';
+			document.getElementById('from-airport-form').style.display = 'none';
+			document.getElementById('other-form').style.display = 'block';
+		});
+
+		document.getElementById('to-airport-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			var name = document.getElementById('to-airport-name').value;
+			var email = document.getElementById('to-airport-email').value;
+			var flightNumber = document.getElementById('to-airport-flight-number').value;
+			var date = document.getElementById('to-airport-date').value;
+			var time = document.getElementById('to-airport-time').value;
+			var childSeat = document.getElementById('to-airport-child-seat').value;
+			var message = document.getElementById('to-airport-message').value;
+
+			var successMessage = document.getElementById('to-airport-success-message');
+			successMessage.innerText = 'Booking successful! Thank you, ' + name + '!';
+			successMessage.style.display = 'block';
+
+			document.getElementById('to-airport-form').reset();
+		});
+
+		document.getElementById('from-airport-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			var name = document.getElementById('from-airport-name').value;
+			var email = document.getElementById('from-airport-email').value;
+			var flightNumber = document.getElementById('from-airport-flight-number').value;
+			var date = document.getElementById('from-airport-date').value;
+			var time = document.getElementById('from-airport-time').value;
+			var childSeat = document.getElementById('from-airport-child-seat').value;
+			var message = document.getElementById('from-airport-message').value;
+
+			var successMessage = document.getElementById('from-airport-success-message');
+			successMessage.innerText = 'Booking successful! Thank you, ' + name + '!';
+			successMessage.style.display = 'block';
+
+			document.getElementById('from-airport-form').reset();
+		});
+
+		document.getElementById('other-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			var name = document.getElementById('other-name').value;
+			var email = document.getElementById('other-email').value;
+			var date = document.getElementById('other-date').value;
+			var time = document.getElementById('other-time').value;
+			var message = document.getElementById('other-message').value;
+
+			var successMessage = document.getElementById('other-success-message');
+			successMessage.innerText = 'Booking successful! Thank you, ' + name + '!';
+			successMessage.style.display = 'block';
+
+			document.getElementById('other-form').reset();
+		});
+	</script>
+</body>
+</html>
+

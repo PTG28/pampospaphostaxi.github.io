@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.PNG" > <title>Pampos Paphos Taxi</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="style2.css">
+
+    
+
+    
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+          <span>Pampos Paphos Taxi</span>
+            <ul id="sidemenu">
+                
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#pricelist">Price List</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="onlinebooking.html">Online Booking</a></li>
+              <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Taxi Services</p>
+            <h1>Hi, We are <span>Pampos Paphos Taxi</span><br>located in Paphos</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="4.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>At PamposPaphosTaxi, we are dedicated to providing exceptional taxi services tailored to your needs. With a focus on reliability, comfort, and customer satisfaction, we strive to deliver a seamless transportation experience. Our professional drivers and modern fleet ensure safe and efficient journeys, whether you're heading to the airport, exploring the city, or attending a special event. Trust in our expertise and enjoy a hassle-free ride with PamposPaphosTaxi.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('reviews')">Reviews</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Efficient and Knowledgeable Route Planning</span><br>Optimal routes planned for efficient and time-saving travel.</li>
+                        <li><span>Dedicated to Customer Satisfaction</span><br>Committed to providing exceptional service and exceeding customer expectations.</li>
+                        <li><span>Safe and Comfortable Travel Experience</span><br>Ensuring your safety and comfort throughout the ride.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Extensive Industry Expertise</span><br>Deep knowledge and experience in the taxi and transportation industry.</li>
+                        <li><span>Thousands of Satisfied Customers</span><br>Delighting customers with our exceptional service and leaving them satisfied.</li>
+                        <li><span>Proven Track Record of Excellence</span><br>Consistently delivering high-quality and reliable transportation services.</li>
+                        <li><span>Continuous Commitment to Improvement</span><br>Continuously enhancing our services to exceed customer expectations.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="reviews">
+                    <ul>
+                        <li><span>Coming soon...!</span><br>We are excited, how about you?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-car" style="color: white;"></i>
+                <h2>Local rides</h2>
+                <p>Effortlessly explore the city's wonders with our local rides. Reliable, convenient, and memorable transportation at your service.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-plane" style="color: white;"></i>
+                <h2>Airport transfers</h2>
+                <p>Seamless airport transfers for a stress-free journey. Reliable, comfortable, and timely transportation to or from the airport.</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-torii-gate" style="color: white;"></i>
+                <h2>Tours</h2>
+                <p>Unforgettable tours that immerse you in local culture and stunning attractions. Expert guides, captivating itineraries, and lifelong memories.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------Price List Table------------ -->
+<div id="pricelist">
+    <div class="container">
+        <h1 class="sub-title">Price List</h1>
+        <div class="content">
+
+            <div class="container">
+              <h2 class="mb-5">Paphos Arrivals / Departures</h2>
+      
+      
+              <div class="table-responsive">
+      
+                <table class="table table-striped custom-table">
+                  <thead>
+                    <tr>
+      
+                      <th scope="col">From Location</th>
+                      <th scope="col">To Destination</th>
+                      <th scope="col">1-4 Seats Taxi</th>
+                      <th scope="col">1-6 Seats Taxi</th>
+                    </tr>
+                  </thead>
+      
+      
+                  <tbody>
+                    <tr scope="row">
+                      <td>Paphos Airport</td>
+                      <td><a href="https://chooseyourcyprus.com/paphos-old-town/">Paphos/Paphos Town</a>
+                        <small class="d-block">Paphos Old City</small>
+                      </td>
+                      <td>€ 35</td>
+                      <td>€ 45</td>
+      
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://www.tripadvisor.co.uk/Tourism-g1916666-Kissonerga_Paphos_District-Vacations.html">Kissonerga/Tala</a>
+                        <small class="d-block">Lying near the sea</small>
+                      </td>
+                      <td>€ 45</td>
+                      <td>€ 55</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://coral.com.cy/">Coral bay</a>
+                        <small class="d-block">The Spirit of Cyprus</small>
+                      </td>
+                      <td>€ 50</td>
+                      <td>€ 60</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://chooseyourcyprus.com/pissouri-village-bay-2/">Pissouri</a>
+                        <small class="d-block">An old village high up in the hills</small>
+                      </td>
+                      <td>€ 55</td>
+                      <td>€ 65</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://explore-cyprus.com/locations/polis-latchi/">Polis/Latchi</a>
+                        <small class="d-block">An area full of green, natural beauties</small>
+                      </td>
+                      <td>€ 75</td>
+                      <td>€ 85</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://chooseyourcyprus.com/15-things-to-do-in-limassol/">Limassol</a>
+                        <small class="d-block">A technologically developing city</small>
+                      </td>
+                      <td>€ 75+</td>
+                      <td>€ 85+</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://www.larnaka.org.cy/en/">Larnaca</a>
+                        <small class="d-block">A place of History</small>
+                      </td>
+                      <td>€ 130</td>
+                      <td>€ 140</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://www.helenonherholidays.com/nicosia-cyprus-things-to-do/">Nicosia</a>
+                        <small class="d-block">World’s last divided capital city</small>
+                      </td>
+                      <td>€ 150</td>
+                      <td>€ 160</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Paphos Airport</td>
+                      <td><a href="https://chooseyourcyprus.com/top-5-beaches-in-ayia-napa-protaras/">Ayia Napa/ Protaras</a>
+                        <small class="d-block">Most favoured destination for holidays</small>
+                      </td>
+                      <td>€ 180</td>
+                      <td>€ 200</td>
+                    </tr>
+      
+                  </tbody>
+                </table>
+              </div>
+      
+              <h2 class="mb-5">Larnaca Arrivals / Departures</h2>
+      
+      
+              <div class="table-responsive">
+      
+                <table class="table table-striped custom-table">
+                  <thead>
+                    <tr>
+      
+                      <th scope="col">From Location</th>
+                      <th scope="col">To Destination</th>
+                      <th scope="col">1-4 Seats Taxi</th>
+                      <th scope="col">1-6 Seats Taxi</th>
+                    </tr>
+                  </thead>
+      
+      
+                  <tbody>
+                    <tr scope="row">
+                      <td>Larnaca airport</td>
+                      <td><a href="https://chooseyourcyprus.com/paphos-old-town/">Paphos/Paphos Town</a>
+                        <small class="d-block">Paphos Old City</small>
+                      </td>
+                      <td>€ 130</td>
+                      <td>€ 140</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Larnaca Airport</td>
+                      <td><a href="https://chooseyourcyprus.com/pissouri-village-bay-2/">Chloraka/Empa</a>
+                        <small class="d-block">Far far away, behind the word mountains</small>
+                      </td>
+                      <td>€ 135</td>
+                      <td>€ 145</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Larnaca Airport</td>
+                      <td><a
+                          href="https://www.tripadvisor.co.uk/Tourism-g1916666-Kissonerga_Paphos_District-Vacations.html">Kissonerga/Tala</a>
+                        <small class="d-block">Lying near the sea</small>
+                      </td>
+                      <td>€ 135</td>
+                      <td>€ 145</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Larnaca Airport</td>
+                      <td><a href="https://coral.com.cy/">Coral bay</a>
+                        <small class="d-block">The Spirit of Cyprus</small>
+                      </td>
+                      <td>€ 145</td>
+                      <td>€ 155</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Larnaca Airport</td>
+                      <td><a href="https://onirobythesea.com/">Peyia</a>
+                        <small class="d-block">Known for some of its popular attractions</small>
+                      </td>
+                      <td>€ 150</td>
+                      <td>€ 160</td>
+                    </tr>
+      
+                    <tr>
+                      <td>Larnaca Airport</td>
+                      <td><a href="https://explore-cyprus.com/locations/polis-latchi/">Polis/Latchi</a>
+                        <small class="d-block">An area full of green, natural beauties</small>
+                      </td>
+                      <td>€ 180</td>
+                      <td>€ 190</td>
+                    </tr>
+      
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<!-- ----------contact form------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-solid fa-envelope"></i> info@pampospaphostaxi.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +357 99123490</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-email" action="https://formsubmit.co/info@pampospaphostaxi.com" method="POST">
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2023</p>
+    </div>
+</div>
+    <script src="tblnks.js"></script>
+    <script src="sidemenu.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

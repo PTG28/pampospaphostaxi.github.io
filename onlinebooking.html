@@ -32,7 +32,7 @@
 		
 
 		<div class="form-container">
-			<form name="submit-to-email" id="from-airport-form" style="display: block;" action="https://formsubmit.co/info@pampospaphostaxi.com" method="POST">
+			<form name="submit-to-email" id="from-airport-form" style="display: block;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
 				<h2 class="form-title">Arrivals</h2>
 
 				<label for="pickup-location">Pickup me from airport:</label>
@@ -40,8 +40,8 @@
                 <input type="hidden" name="_captcha" value="false">
 				<select id="pickup-location" name="Pickup" required>
 					<option value="Select">-Select-</option>
-					<option value="Paphos">Paphos</option>
-					<option value="Larnaca">Larnaca</option>
+					<option value="Paphos">Paphos Airport</option>
+					<option value="Larnaca">Larnaca Airport</option>
 				</select>
 
 				<label for="Destination">Destination:</label>
@@ -96,26 +96,26 @@
 
 
 		<div class="form-container">
-			<form  id="to-airport-form" style="display: none;" action="https://formsubmit.co/info@pampospaphostaxi.com" method="POST">
+			<form  id="to-airport-form" style="display: none;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
 				<h2 class="form-title">Departures</h2>
 
 				<label for="Location">Location:</label>
 				<input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
-				<input type="text" id="Location" required>
+				<input type="text" name="Location" id="Location" required>
 
 				<label for="Destination">Take me to airport:</label>
-				<select id="Destination" required>
+				<select name="Destination" id="Destination" required>
 					<option value="Select">-Select-</option>
-					<option value="Paphos">Paphos</option>
-					<option value="Larnaca">Larnaca</option>
+					<option value="Paphos">Paphos Airport</option>
+					<option value="Larnaca">Larnaca Airport</option>
 				</select>
 
 				<label for="name">Full name:</label>
-				<input type="text" id="to-airport-name" required>
+				<input type="text" name="Fullname" id="to-airport-name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers" required>
+				<select id="passengers" name="Passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -126,30 +126,30 @@
 				</select>
 
 				<label for="Luggages">Number of luggages:</label>
-				<input type="text" id="to-airport-flight-number" placeholder="1x20kg , 2x8kg">
+				<input name="Luggages" type="text" id="to-airport-flight-number" placeholder="1x20kg , 2x8kg">
 				
 
 				<label for="date">Date:</label>
-				<input type="date" id="to-airport-date" required>
+				<input name="Date" type="date" id="to-airport-date" required>
 
-				<label for="time">Time:</label>
-				<input type="time" id="to-airport-time" required>
+				<label  for="time">Time:</label>
+				<input name="Time" type="time" id="to-airport-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select id="to-airport-child-seat" required>
+				<select name="Child-seat" id="to-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
 				</select>
 
 				<label for="Phone">Phone number:</label>
-				<input type="text" id="Phone" required>
+				<input name="Phone" type="text" id="Phone" required>
 
 				<label for="email">Email:</label>
-				<input type="email" id="to-airport-email" required>
+				<input name="Email" type="email" id="to-airport-email" required>
 
 				<label for="message">Message:</label>
-				<textarea id="to-airport-message" rows="5"></textarea>
+				<textarea name="Message" id="to-airport-message" rows="5"></textarea>
 
 				<button type="submit">Book Now</button>
 			</form>
@@ -158,22 +158,22 @@
 
 
 		<div class="form-container">
-			<form id="other-form" style="display: none;" action="https://formsubmit.co/info@pampospaphostaxi.com" method="POST">
+			<form id="other-form" style="display: none;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
 				<h2 class="form-title">Other</h2>
 
 				<label for="Location">Location:</label>
 				<input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
-				<input type="text" id="Location" required>
+				<input type="text" name="Location" id="Location" required>
 
 				<label for="Destination">Destination:</label>
-				<input type="text" id="Destination" required>
+				<input type="text" name="Destination" id="Destination" required>
 
 				<label for="name">Full name:</label>
-				<input type="text" id="other-name" required>
+				<input type="text" name="Fullname" id="other-name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers" required>
+				<select id="passengers" name="Passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -184,27 +184,27 @@
 				</select>
 
 				<label for="date">Date:</label>
-				<input type="date" id="other-date" required>
+				<input name="Date" type="date" id="other-date" required>
 
 				<label for="time">Time:</label>
-				<input type="time" id="other-time" required>
+				<input name="Time" type="time" id="other-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select id="to-airport-child-seat" required>
+				<select name="Child-seat" id="to-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
 				</select>
 
 				<label for="Phone">Phone number:</label>
-				<input type="text" id="Phone" required>
+				<input name="Phone" type="text" id="Phone" required>
 
 
 				<label for="email">Email:</label>
-				<input type="email" id="other-email" required>
+				<input name="Email" type="email" id="other-email" required>
 
 				<label for="message">Message:</label>
-				<textarea id="other-message" rows="5"></textarea>
+				<textarea name="Message" id="other-message" rows="5"></textarea>
 
 				<button type="submit">Book Now</button>
 			</form>

@@ -9,7 +9,7 @@
 	<div id="header">
 		<div class="container">
 			<nav>
-				<img src="nobglogo.PNG" class="logo">
+				<img src="nobglogo.png" class="logo">
 				<ul id="sidemenu">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="index.html#about">About</a></li>
@@ -33,12 +33,13 @@
 
 		<div class="form-container">
 			<form name="submit-to-email" id="from-airport-form" style="display: block;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
+
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
 				<h2 class="form-title">Arrivals</h2>
 
 				<label for="pickup-location">Pickup me from airport:</label>
-				<input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
-				<select id="pickup-location" name="Pickup" required>
+				<select id="pickup-location" name="Airport&nbsp;Pickup" required>
 					<option value="Select">-Select-</option>
 					<option value="Paphos">Paphos Airport</option>
 					<option value="Larnaca">Larnaca Airport</option>
@@ -97,15 +98,16 @@
 
 		<div class="form-container">
 			<form  id="to-airport-form" style="display: none;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+
 				<h2 class="form-title">Departures</h2>
 
 				<label for="Location">Location:</label>
-				<input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
 				<input type="text" name="Location" id="Location" required>
 
 				<label for="Destination">Take me to airport:</label>
-				<select name="Destination" id="Destination" required>
+				<select name="To&nbsp;Airport" id="Destination" required>
 					<option value="Select">-Select-</option>
 					<option value="Paphos">Paphos Airport</option>
 					<option value="Larnaca">Larnaca Airport</option>
@@ -159,11 +161,12 @@
 
 		<div class="form-container">
 			<form id="other-form" style="display: none;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
 				<h2 class="form-title">Other</h2>
 
 				<label for="Location">Location:</label>
-				<input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
+				
 				<input type="text" name="Location" id="Location" required>
 
 				<label for="Destination">Destination:</label>

@@ -2,19 +2,19 @@
 <html>
 <head>
 	<title>Online Booking Form</title>
+	<link rel="icon" type="image/x-icon" href="images/background.png" >
 	<link rel="stylesheet" href="onlinebookingstyle.css">
-	<link rel="icon" href="logo.PNG" type="image/x-icon">
 </head>
 <body>
 	<div id="header">
 		<div class="container">
 			<nav>
-				<img src="nobglogo.png" class="logo">
+				<img src="images/logo.png" class="logo">
 				<ul id="sidemenu">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#header">Home</a></li>
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#services">Services</a></li>
-					<li><a href="index.html#pricelist">Price List</a></li>
+					<li><a href="index.html#portfolio">Price List</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
 					<li><a href="#">Online Booking</a></li>
 					<i class="fas fa-times" onclick="closemenu()"></i>
@@ -32,17 +32,16 @@
 		
 
 		<div class="form-container">
-			<form name="submit-to-email" id="from-airport-form" style="display: block;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
-
-				<input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
+			<form name="submit-to-email" id="from-airport-form" style="display: block;" action="https://formsubmit.co/c22903eeda1150786df3dc7808200c90" method="POST">
 				<h2 class="form-title">Arrivals</h2>
 
 				<label for="pickup-location">Pickup me from airport:</label>
-				<select id="pickup-location" name="Airport&nbsp;Pickup" required>
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+				<select id="pickup-location" name="Pickup" required>
 					<option value="Select">-Select-</option>
-					<option value="Paphos">Paphos Airport</option>
-					<option value="Larnaca">Larnaca Airport</option>
+					<option value="Paphos">Paphos</option>
+					<option value="Larnaca">Larnaca</option>
 				</select>
 
 				<label for="Destination">Destination:</label>
@@ -97,27 +96,26 @@
 
 
 		<div class="form-container">
-			<form  id="to-airport-form" style="display: none;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
-				<input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
-
+			<form  id="to-airport-form" style="display: none;" action="https://formsubmit.co/c22903eeda1150786df3dc7808200c90" method="POST">
 				<h2 class="form-title">Departures</h2>
 
 				<label for="Location">Location:</label>
-				<input type="text" name="Location" id="Location" required>
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+				<input type="text" id="Location" required>
 
 				<label for="Destination">Take me to airport:</label>
-				<select name="To&nbsp;Airport" id="Destination" required>
+				<select id="Destination" required>
 					<option value="Select">-Select-</option>
-					<option value="Paphos">Paphos Airport</option>
-					<option value="Larnaca">Larnaca Airport</option>
+					<option value="Paphos">Paphos</option>
+					<option value="Larnaca">Larnaca</option>
 				</select>
 
 				<label for="name">Full name:</label>
-				<input type="text" name="Fullname" id="to-airport-name" required>
+				<input type="text" id="to-airport-name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers" name="Passengers" required>
+				<select id="passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -128,30 +126,30 @@
 				</select>
 
 				<label for="Luggages">Number of luggages:</label>
-				<input name="Luggages" type="text" id="to-airport-flight-number" placeholder="1x20kg , 2x8kg">
+				<input type="text" id="to-airport-flight-number" placeholder="1x20kg , 2x8kg">
 				
 
 				<label for="date">Date:</label>
-				<input name="Date" type="date" id="to-airport-date" required>
+				<input type="date" id="to-airport-date" required>
 
-				<label  for="time">Time:</label>
-				<input name="Time" type="time" id="to-airport-time" required>
+				<label for="time">Time:</label>
+				<input type="time" id="to-airport-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select name="Child-seat" id="to-airport-child-seat" required>
+				<select id="to-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
 				</select>
 
 				<label for="Phone">Phone number:</label>
-				<input name="Phone" type="text" id="Phone" required>
+				<input type="text" id="Phone" required>
 
 				<label for="email">Email:</label>
-				<input name="Email" type="email" id="to-airport-email" required>
+				<input type="email" id="to-airport-email" required>
 
 				<label for="message">Message:</label>
-				<textarea name="Message" id="to-airport-message" rows="5"></textarea>
+				<textarea id="to-airport-message" rows="5"></textarea>
 
 				<button type="submit">Book Now</button>
 			</form>
@@ -160,23 +158,22 @@
 
 
 		<div class="form-container">
-			<form id="other-form" style="display: none;" action="https://formsubmit.co/5f575ad5902bb332a20ebf192740d9bc" method="POST">
-				<input type="text" name="_honey" style="display: none;">
-                <input type="hidden" name="_captcha" value="false">
+			<form id="other-form" style="display: none;" action="https://formsubmit.co/c22903eeda1150786df3dc7808200c90" method="POST">
 				<h2 class="form-title">Other</h2>
 
 				<label for="Location">Location:</label>
-				
-				<input type="text" name="Location" id="Location" required>
+				<input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+				<input type="text" id="Location" required>
 
 				<label for="Destination">Destination:</label>
-				<input type="text" name="Destination" id="Destination" required>
+				<input type="text" id="Destination" required>
 
 				<label for="name">Full name:</label>
-				<input type="text" name="Fullname" id="other-name" required>
+				<input type="text" id="other-name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers" name="Passengers" required>
+				<select id="passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -187,27 +184,27 @@
 				</select>
 
 				<label for="date">Date:</label>
-				<input name="Date" type="date" id="other-date" required>
+				<input type="date" id="other-date" required>
 
 				<label for="time">Time:</label>
-				<input name="Time" type="time" id="other-time" required>
+				<input type="time" id="other-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select name="Child-seat" id="to-airport-child-seat" required>
+				<select id="to-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
 				</select>
 
 				<label for="Phone">Phone number:</label>
-				<input name="Phone" type="text" id="Phone" required>
+				<input type="text" id="Phone" required>
 
 
 				<label for="email">Email:</label>
-				<input name="Email" type="email" id="other-email" required>
+				<input type="email" id="other-email" required>
 
 				<label for="message">Message:</label>
-				<textarea name="Message" id="other-message" rows="5"></textarea>
+				<textarea id="other-message" rows="5"></textarea>
 
 				<button type="submit">Book Now</button>
 			</form>
@@ -215,10 +212,6 @@
 		</div>
 
 	</div>
-
-	<div class="copyright">
-        <p>Copyright © 2023</p>
-    </div>
 
 	<script>
 

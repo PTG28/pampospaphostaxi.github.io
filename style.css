@@ -8,23 +8,23 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
+    background: #272727;
     color: #fff;
+}
+body a{
+    text-decoration: none;
+    color: inherit;
 }
 #header{
     width: 100%;
-    height: 69vh;
-    background-image: url(background.jpg);
+    height: 80vh;
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 .container{
     padding: 10px 10%;
-    
-}
-.sidemenu{
-    margin-right: 10px;
 }
 
 nav{
@@ -38,12 +38,6 @@ nav{
     width: 140px;
 }
 
-nav span{
-    color: goldenrod;
-    font-family: sans-serif;
-    font-size:xx-large;
-    margin-left: 20px;
-}
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -51,10 +45,15 @@ nav ul li{
 }
 
 nav ul li a{
-    color: rgb(29, 28, 28);
+    color: #252424;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+}
+nav ul li a:hover{
+    color: goldenrod;
+    transition: 0.3s ease;
+
 }
 nav ul li a::after{
     content: '';
@@ -76,15 +75,31 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
-    color: #3f3f3f;
 }
 .header-text h1 span{
     color: goldenrod;
 }
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid goldenrod;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: goldenrod;
+}
+
+
 /* -----------about--------------- */
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: #ffffff;
+
 }
 .row{
     display: flex;
@@ -106,7 +121,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #ffffff;
 }
 
 .tab-titles{
@@ -153,6 +168,7 @@ nav ul li a:hover::after{
 /* ----------------services------------- */
 #services{
     padding: 30px 0;
+
 }
 .services-list{
     display: grid;
@@ -166,7 +182,7 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+    transition:0.5s, transform 0.5s;
 }
 .services-list div i{
     font-size: 50px;
@@ -179,7 +195,7 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -188,9 +204,102 @@ nav ul li a:hover::after{
     background: goldenrod;
     transform: translateY(-10px);
 }
-/* -------Price List----------- */
+/* -------portfolio----------- */
 
+.pricing-container {
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-x: auto;
+  }
 
+  .pricing-container h1{
+    color: #ffffff;
+    font-size: 70px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  }
+
+  .pricing-container h2{
+    margin-top: 40px;
+    color: #ffffff;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+  }
+
+  .pricing-table {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #252525;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .pricing-table th {
+    color: #ffffff;
+    text-align: left;
+    font-size: 15px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 10px;
+  }
+
+  .pricing-table td {
+    background-color: #555353;
+    color: rgb(175, 173, 173);
+    text-align: left;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .pricing-table tr:hover td {
+    color: white;
+    transition: 0.4s ease;
+  }
+
+  .pricing-table tr:hover td:nth-child(2) {
+    color: goldenrod;
+    transition: 0.4s ease;
+  }
+
+  .pricing-table tr:nth-child(2n) td {
+    background-color: rgb(48, 48, 48);
+  }
+
+  .pricing-table tr:nth-child(2n+1) td {
+    background-color: rgb(37, 37, 37);
+  }
+
+  .pricing-table td:nth-child(2) .note {
+    font-size: 12px;
+    color: rgb(189, 188, 188);
+  }
+
+  .pricing-table td:nth-child(2) a {
+    text-decoration: none;
+    color: inherit;
+  }
+/* ----- Notes ------*/
+.notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.notes div{
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #2b2a2a;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition:0.5s, transform 0.5s;
+}
+
+.notes div:hover{
+    background: goldenrod;
+    transform: translateY(-10px);
+}
 
 /* ---------contact-------- */
 .contact-left{
@@ -214,7 +323,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #e6e6e6;
     display: inline-block;
     transition: transform 0.5s;
 }
@@ -268,21 +377,24 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(minibackground.jpg);
+        background-image: url(images/background.jpg);
     }
     .header-text{
-        margin-top: 100px;
+        
+        margin-top: 100%;
         font-size: 16px;
+        
     }
     .header-text h1{
         font-size: 30px;
     }
     nav .fas{
+        color: #a7a0a0;
         display: block;
         font-size: 25px;
     }
     nav ul{
-        background: rgb(94, 92, 92);
+        background: rgb(129, 129, 129);
         position: fixed;
         top: 0;
         right: -200px;
@@ -291,44 +403,46 @@ nav .fas{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+        
     }
     nav ul li{
         display: block;
         margin: 25px;
     }
     nav ul .fas{
+        color: #fafafa;
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
+      
     .sub-title{
         font-size: 40px;
+        
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+        
     }
     .about-col-1{
         margin-bottom: 30px;
+        
     }
     .about-col-2{
         font-size: 14px;
+        
     }
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+        
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+        
     }
     .copyright{
         font-size: 14px;
     }
 }
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
-
-

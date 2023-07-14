@@ -97,8 +97,9 @@ nav ul li a:hover::after{
 }
 
 .form-container {
-  width: 400px;
-  margin-bottom: 2rem;
+    width: 800px;
+    margin-bottom: 2rem;
+    margin: auto;
 }
 
 .form-title {
@@ -190,4 +191,3 @@ button {
   font-weight: 300;
   margin-top: 20px;
 }
-	

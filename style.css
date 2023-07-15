@@ -81,7 +81,7 @@ nav ul li a:hover::after{
 }
 .btn{
     display: block;
-    margin: 35px auto;
+    margin: 25px auto;
     width: fit-content;
     border: 1px solid goldenrod;
     padding: 14px 50px;

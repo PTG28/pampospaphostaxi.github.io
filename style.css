@@ -81,7 +81,7 @@ nav ul li a:hover::after{
 }
 .btn{
     display: block;
-    margin: 50px auto;
+    margin: 35px auto;
     width: fit-content;
     border: 1px solid goldenrod;
     padding: 14px 50px;
@@ -117,6 +117,9 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p{
+    font-size: 19px;
+}
 
 .sub-title{
     font-size: 60px;
@@ -130,7 +133,7 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -153,10 +156,11 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 17px;
 }
 .tab-contents ul li span{
     color: goldenrod;
-    font-size: 14px;
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
@@ -179,7 +183,7 @@ nav ul li a:hover::after{
 .services-list div{
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 300;
     border-radius: 10px;
     transition:0.5s, transform 0.5s;
@@ -290,7 +294,7 @@ nav ul li a:hover::after{
     margin-right: 10%;
     background: #2b2a2a;
     padding: 40px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 300;
     border-radius: 10px;
     transition:0.5s, transform 0.5s;

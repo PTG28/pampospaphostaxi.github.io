@@ -22,6 +22,7 @@ body a{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    -webkit-backround-size: cover;
 }
 .container{
     padding: 10px 10%;
@@ -387,6 +388,7 @@ nav .fas{
         background-image: url(images/background.png);
         background-size: cover;
         background-repeat: no-repeat;
+        -webkit-backround-size: cover;
     }
     .header-text{
         

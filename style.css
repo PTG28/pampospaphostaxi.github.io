@@ -30,7 +30,7 @@ body a{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    -webkit-backround-size: cover;
+    -webkit-background-size: cover;
 }
 .container{
     padding: 10px 10%;
@@ -455,7 +455,6 @@ nav .fas{
         -webkit-background-size: cover;
         -o-background-size: cover;
         -moz-background-size:cover;
-        background-size: 100% 100%;
 
     }
     .header-text{

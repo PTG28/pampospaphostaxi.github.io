@@ -452,7 +452,11 @@ nav .fas{
         background-image: url(images/background.png);
         background-size: cover;
         background-repeat: no-repeat;
-        -webkit-backround-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size:cover;
+        background-size: 100% 100%;
+
     }
     .header-text{
         

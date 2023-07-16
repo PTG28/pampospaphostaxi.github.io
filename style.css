@@ -249,7 +249,7 @@ nav ul li a:hover::after{
 
   .pricing-table td {
     background-color: #555353;
-    color: rgb(175, 173, 173);
+    color: rgb(211, 208, 208);
     text-align: left;
     padding: 20px;
     transition: background-color 0.3s ease;
@@ -275,7 +275,7 @@ nav ul li a:hover::after{
 
   .pricing-table td:nth-child(2) .note {
     font-size: 12px;
-    color: rgb(189, 188, 188);
+    color: rgb(224, 223, 223);
   }
 
   .pricing-table td:nth-child(2) a {

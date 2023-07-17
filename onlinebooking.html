@@ -106,20 +106,20 @@
 				<label for="Location">Location:</label>
 				<input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
-				<input type="text" id="Location" required>
+				<input type="text" id="Location" name="Location" required>
 
 				<label for="Destination">Take me to airport:</label>
-				<select id="Destination" name="Airport" required>
+				<select id="Destination" name="To_Airport" required>
 					<option value="Select">-Select-</option>
 					<option value="Paphos">Paphos Airport</option>
 					<option value="Larnaca">Larnaca Airport</option>
 				</select>
 
 				<label for="name">Full name:</label>
-				<input type="text" id="to-airport-name" required>
+				<input type="text" id="to-airport-name" name="Name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers" required>
+				<select id="passengers" name="Passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -134,30 +134,30 @@
 				</select>
 
 				<label for="Luggages">Number of luggages:</label>
-				<input type="text" id="to-airport-flight-number" placeholder="1x20kg , 2x8kg">
+				<input type="text" name="Luggages" id="to-airport-flight-number" placeholder="1x20kg , 2x8kg">
 				
 
 				<label for="date">Date:</label>
-				<input type="date" id="to-airport-date" required>
+				<input type="date" name="Date" id="to-airport-date" required>
 
 				<label for="time">Time:</label>
-				<input type="time" id="to-airport-time" required>
+				<input type="time" name="Time" id="to-airport-time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select id="to-airport-child-seat" required>
+				<select name="Child_Seat" id="to-airport-child-seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
 				</select>
 
 				<label for="Phone">Phone number:</label>
-				<input type="text" id="Phone" required>
+				<input type="text" name="Phone" id="Phone" required>
 
 				<label for="email">Email:</label>
-				<input type="email" id="to-airport-email" required>
+				<input type="email" name="Email" id="to-airport-email" required>
 
 				<label for="message">Message:</label>
-				<textarea id="to-airport-message" rows="5"></textarea>
+				<textarea id="to-airport-message" name="Message" rows="5"></textarea>
 
 				<button type="submit">Book Now</button>
 			</form>
@@ -172,16 +172,16 @@
 				<label for="Location">Location:</label>
 				<input type="text" name="_honey" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
-				<input type="text" id="Location" required>
+				<input type="text" id="Location" name="Location" required>
 
 				<label for="Destination">Destination:</label>
-				<input type="text" id="Destination" required>
+				<input type="text" id="Destination" name="Destination" required>
 
 				<label for="name">Full name:</label>
-				<input type="text" id="other-name" required>
+				<input type="text" id="other-name" name="Name" required>
 
 				<label for="passengers">Number of passengers:</label>
-				<select id="passengers" required>
+				<select id="passengers" name="Passengers" required>
 					<option value="Select">-Select-</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -196,27 +196,27 @@
 				</select>
 
 				<label for="date">Date:</label>
-				<input type="date" id="other-date" required>
+				<input type="date" id="other-date" name="Date" required>
 
 				<label for="time">Time:</label>
-				<input type="time" id="other-time" required>
+				<input type="time" id="other-time" name="Time" required>
 
 				<label for="child-seat">Child Seat:</label>
-				<select id="to-airport-child-seat" required>
+				<select id="to-airport-child-seat" name="Child_Seat" required>
 					<option value="Select">-Select-</option>
 					<option value="no">No</option>
 					<option value="yes">Yes</option>
 				</select>
 
 				<label for="Phone">Phone number:</label>
-				<input type="text" id="Phone" required>
+				<input type="text" id="Phone" name="Phone" required>
 
 
 				<label for="email">Email:</label>
-				<input type="email" id="other-email" required>
+				<input type="email" id="other-email" name="Email" required>
 
 				<label for="message">Message:</label>
-				<textarea id="other-message" rows="5"></textarea>
+				<textarea name="Message" id="other-message" rows="5"></textarea>
 
 				<button type="submit">Book Now</button>
 			</form>

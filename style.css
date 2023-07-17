@@ -449,7 +449,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/background.webp);
+        background-image: url(images/back_ground.png);
         background-size: cover;
         background-repeat: no-repeat;
         -webkit-background-size: cover;

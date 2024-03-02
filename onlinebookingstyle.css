@@ -146,7 +146,7 @@ textarea {
 
 button {
   padding: 0.5rem 1rem;
-  background-color: gold;
+  background-color: rgb(247, 194, 61);
   color: #000;
   border: none;
   border-radius: 3px;
@@ -190,12 +190,66 @@ button {
     line-height: 1.4;
 }
 
+/* Faqs style */
+.faq-container {
+  
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 70px;
+  border-radius: 5px;
+}
+.faq-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+.faq-question {
+  background-color: #333;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+.faq-question::after {
+  content: "+"; /* Plus symbol */
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease; /* Smooth transform (rotation) transition */
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth reveal transition */
+}
+.faq-question.active {
+  background-color: rgb(247, 194, 61); /* Change background color to gold when active (clicked) */
+}
+.faq-question.active::after {
+  transform: rotate(45deg); /* Rotate the plus symbol to a diagonal cross */
+}
+.faq-answer.active {
+  max-height: 1000px; /* Adjust max height to a sufficiently large value */
+  visibility: visible;
+  opacity: 1;
+}
+
+
 .copyright{
   width: 100%;
+  font-size: 16px;
   text-align: center;
   padding: 25px 0;
   background: #262626;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 20px;
 }
 

@@ -16,6 +16,7 @@
 					<li><a href="index.html#services">Services</a></li>
 					<li><a href="index.html#portfolio">Price List</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
+					<li><a href="onlinebooking.html#faqs">FAQ's</a></li>
 					<li><a href="#">Online Booking</a></li>
 					<i class="fas fa-times" onclick="closemenu()"></i>
 				</ul>
@@ -224,9 +225,28 @@
 		</div>
 
 	</div>
+	<div id="faqs">
+		<div class="faq-container">
+			<div class="faq-header">Frequently Asked Questions</div>
+			<div class="faq-item">
+				<div class="faq-question">Q1: What happens when I book a taxi for a specific date?</div>
+				<div class="faq-answer">A1: When you book a taxi for a specific date, we will promptly receive your request. Subsequently, we will provide you with all the necessary details, including the price of the trip. To confirm your booking and ensure its validity, simply respond to the email we send you.</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">Q2: Do I need to make any prepayments?</div>
+				<div class="faq-answer">A2: No, there's no requirement for any prepayments. We operate on a traditional basis built on trust and confidence in our customers. Our policy follows the principle of "service first, payment later." Therefore, you'll settle the fare directly with the taxi driver upon reaching your destination, ensuring convenience and peace of mind for our passengers.</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">Q3: What if I can not find the driver?</div>
+				<div class="faq-answer">A3: Our drivers will be holding a clearly visible sign with your name on it, making it easier for you to identify them. In the rare event that the driver may be running slightly behind schedule (typically no more than 5-10 minutes), we prioritize communication with our customers. You will receive a notification or a call from our team to inform you about any delay and provide you with an estimated arrival time.</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	<div class="copyright">
-        <p>Copyright © 2023</p>
+        <p>© pampospaphostaxi.com 2023. All Rights Reserved |  Developed by <a href="https://www.instagram.com/custom_pc_consultant/" style="color: rgb(247, 194, 61); text-decoration: none;" >custompcconsultant</a></p>
     </div>
 
 
@@ -264,6 +284,33 @@
 			document.getElementById('other-form').style.display = 'block';
 		});
 	</script>
+
+	<script>
+        // JavaScript to toggle FAQ answers and change question background color
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = question.classList.toggle('active');
+                if (isActive) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.visibility = 'visible';
+                    answer.style.opacity = '1';
+                } else {
+                    answer.style.maxHeight = null;
+                    answer.style.visibility = 'hidden';
+                    answer.style.opacity = '0';
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
 </body>
 </html>
 

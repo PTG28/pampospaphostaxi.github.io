@@ -145,6 +145,8 @@ textarea {
 }
 
 button {
+  display: block; /* Ensures the button takes up the full width available */
+  margin: 0 auto; /* Centers the button horizontally */
   padding: 0.5rem 1rem;
   background-color: rgb(247, 194, 61);
   color: #000;
@@ -152,6 +154,7 @@ button {
   border-radius: 3px;
   cursor: pointer;
   font-size: 28px;
+  
 }
 
 .message {

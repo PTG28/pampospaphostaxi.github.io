@@ -389,7 +389,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #e6e6e6;
+    color: #ebebeb;
     display: inline-block;
     -webkit-transition: -webkit-transform 0.5s;
     transition: -webkit-transform 0.5s;
@@ -427,6 +427,30 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+
+/*----Sponsors/Ads----*/
+.sponsorship-section {
+    background-color: #222222;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-logos a {
+    margin: 0 20px;
+}
+
+.sponsor-logos img {
+    max-width: 150px;
+    height: auto;
+}
+
+/*----Copyrights----*/
 .copyright{
     width: 100%;
     text-align: center;
@@ -442,10 +466,12 @@ form .btn2{
     color: goldenrod;
     text-decoration: none;
 }
-/* -----------------css for small screens--------- */
+/* ----css for small screens---- */
 nav .fas{
     display: none;
 }
+
+
 
 @media only screen and (max-width: 600px){
     #header{
@@ -472,7 +498,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: rgb(129, 129, 129);
+        backdrop-filter: blur(40rem);
         position: fixed;
         top: 0;
         right: -200px;
@@ -524,6 +550,12 @@ nav .fas{
             flex-basis: 100%;
         
     }
+
+    .sponsor-logos a {
+        margin: 5px; /* Reduce spacing between logos on smaller screens */
+    }
+
+
     .copyright{
         font-size: 14px;
     }
